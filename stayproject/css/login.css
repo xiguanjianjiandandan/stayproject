@@ -1,0 +1,107 @@
+.login {
+  height: 793px;
+  position: relative; }
+  .login .login-box {
+    width: 635px;
+    height: 541px;
+    background: #f5f5f5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center; }
+    .login .login-box h3 {
+      font-size: 24px;
+      color: #363636;
+      margin-top: 55px; }
+    .login .login-box ul {
+      overflow: hidden;
+      margin-left: 176px;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .login .login-box ul li {
+        float: left;
+        margin-right: 15px; }
+        .login .login-box ul li a {
+          display: block;
+          width: 60px;
+          height: 65px; }
+      .login .login-box ul .douban a {
+        background: url("../images/common/login_way_icon.png") no-repeat left top; }
+        .login .login-box ul .douban a:hover {
+          background: url("../images/common/login_way_icon.png") no-repeat -75px top; }
+      .login .login-box ul .weibo a {
+        background: url("../images/common/login_way_icon.png") no-repeat left -75px; }
+        .login .login-box ul .weibo a:hover {
+          background: url("../images/common/login_way_icon.png") no-repeat -75px -75px; }
+      .login .login-box ul .qq a {
+        background: url("../images/common/login_way_icon.png") no-repeat left -155px; }
+        .login .login-box ul .qq a:hover {
+          background: url("../images/common/login_way_icon.png") no-repeat -75px -155px; }
+      .login .login-box ul .weixin a {
+        background: url("../images/common/login_way_icon.png") no-repeat left -238px; }
+        .login .login-box ul .weixin a:hover {
+          background: url("../images/common/login_way_icon.png") no-repeat -75px -238px; }
+    .login .login-box b {
+      color: #707070;
+      display: block;
+      margin-bottom: 20px; }
+    .login .login-box i {
+      display: block;
+      width: 300px;
+      height: 28px;
+      background: url("../images/register/huo.png") no-repeat left top;
+      margin: 0 auto 20px; }
+    .login .login-box .username {
+      width: 271px;
+      height: 34px;
+      border: 1px solid #dcdcdc;
+      margin: 0 auto;
+      border-radius: 10px; }
+      .login .login-box .username strong {
+        display: inline-block;
+        width: 20px;
+        height: 16px;
+        vertical-align: middle; }
+      .login .login-box .username input {
+        width: 231px;
+        height: 34px; }
+      .login .login-box .username strong {
+        background: url("../images/common/log_icon.png") no-repeat left top; }
+    .login .login-box .password {
+      width: 271px;
+      height: 34px;
+      border: 1px solid #dcdcdc;
+      margin: 0 auto;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      margin-top: 8px; }
+      .login .login-box .password strong {
+        display: inline-block;
+        width: 20px;
+        height: 16px;
+        vertical-align: middle; }
+      .login .login-box .password input {
+        width: 231px;
+        height: 34px; }
+      .login .login-box .password strong {
+        background: url("../images/common/log_icon.png") no-repeat left -17px; }
+    .login .login-box button {
+      width: 271px;
+      height: 34px;
+      border: 1px solid #dba658;
+      margin: 0 auto;
+      border-radius: 10px;
+      background: #fcb616; }
+    .login .login-box .remember {
+      width: 271px;
+      margin: 0 auto;
+      margin-top: 14px; }
+      .login .login-box .remember input {
+        float: left; }
+      .login .login-box .remember span {
+        float: left; }
+      .login .login-box .remember a {
+        float: right; }

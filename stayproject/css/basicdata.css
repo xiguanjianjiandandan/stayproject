@@ -1,0 +1,84 @@
+.item {
+  overflow: hidden;
+  margin-bottom: 23px; }
+  .item .left {
+    width: 100px;
+    float: left;
+    margin-right: 40px; }
+    .item .left strong {
+      float: right; }
+  .item .right {
+    width: 570px;
+    float: left;
+    color: #707070; }
+
+.email .right span {
+  color: #eb91cd;
+  font-size: 11px;
+  margin: 0 30px 0 16px; }
+.email .right a {
+  color: #97c8d7;
+  font-size: 11px; }
+
+.phone .right span {
+  display: inline-block;
+  width: 223px; }
+.phone .right a {
+  color: #97c8d7; }
+
+.nickname .right input {
+  display: block;
+  width: 223px;
+  height: 30px;
+  background: #f3f3f3;
+  line-height: 30px;
+  color: #707070; }
+
+.icon .right i {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  float: left;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #d3d3d3; }
+.icon .right input {
+  width: 94px;
+  height: 23px;
+  background: #4fc9d6;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-left: 44px;
+  margin-right: 20px; }
+
+.sex .right span {
+  margin-right: 67px; }
+
+.work .right input {
+  display: block;
+  width: 222px;
+  height: 30px;
+  background: #f3f3f3;
+  line-height: 30px;
+  color: #707070; }
+
+.signature .right input {
+  display: block;
+  width: 348px;
+  height: 30px;
+  background: #f3f3f3;
+  line-height: 30px;
+  color: #707070; }
+
+.savebtn {
+  display: block;
+  width: 152px;
+  height: 40px;
+  background: #50c8d8;
+  border: 1px solid #47afbc;
+  border-radius: 5px;
+  margin: 45px auto 60px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold; }

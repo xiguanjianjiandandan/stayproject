@@ -1,0 +1,34 @@
+p {
+  color: #464646;
+  font-size: 16px;
+  margin-bottom: 38px;
+  margin-left: 62px; }
+
+dl {
+  margin-left: 62px;
+  overflow: hidden;
+  margin-bottom: 28px; }
+  dl dt {
+    float: left;
+    margin-right: 15px; }
+    dl dt i {
+      display: block;
+      width: 61px;
+      height: 66px; }
+    dl dt .douban {
+      background: url("../images/common/login_way_icon.png") no-repeat left top; }
+    dl dt .sina {
+      background: url("../images/common/login_way_icon.png") no-repeat left -75px; }
+    dl dt .qq {
+      background: url("../images/common/login_way_icon.png") no-repeat left -155px; }
+    dl dt .weixin {
+      background: url("../images/common/login_way_icon.png") no-repeat left -238px; }
+  dl dd {
+    margin-top: 10px;
+    float: left; }
+    dl dd span {
+      color: #464646;
+      font-size: 14px; }
+    dl dd a {
+      color: #50c8d7;
+      font-size: 14px; }

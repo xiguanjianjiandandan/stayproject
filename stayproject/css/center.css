@@ -1,0 +1,74 @@
+.center {
+  background: #eaeaea url("../images/personcenter/person_bg.jpg") no-repeat center top; }
+  .center .center-container {
+    width: 1150px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .center .center-container .userInfo {
+      width: 1150px;
+      height: 320px;
+      margin-bottom: 25px;
+      margin-top: 27px;
+      text-align: center; }
+      .center .center-container .userInfo .userIcon img {
+        display: block;
+        width: 95px;
+        height: 95px;
+        border: 3px solid #9c9c9c;
+        border-radius: 90px;
+        margin: 67px auto 14px; }
+      .center .center-container .userInfo .nickname {
+        color: #fff;
+        font-size: 20px; }
+      .center .center-container .userInfo .signatrue {
+        color: #fff; }
+    .center .center-container .banner {
+      height: 98px; }
+      .center .center-container .banner a {
+        display: block;
+        width: 100%;
+        height: 98px;
+        background: url("../images/personcenter/banner.jpg") no-repeat center top; }
+    .center .center-container .content {
+      width: 795px;
+      float: left; }
+      .center .center-container .content .release {
+        width: 795px;
+        min-height: 215px;
+        background: #fff;
+        margin: 15px 15px 15px 0; }
+    .center .center-container .about {
+      float: right;
+      width: 270px;
+      height: 632px;
+      background: #f2f2f2;
+      margin-top: 15px;
+      border: 1px solid #dedddd;
+      padding: 0 35px 0 35px;
+      overflow: hidden; }
+      .center .center-container .about h3 {
+        margin: 50px 0 5px 0;
+        font-size: 28px;
+        color: #535353;
+        text-align: right; }
+      .center .center-container .about ul li {
+        border-bottom: 1px solid #dedede;
+        position: relative; }
+        .center .center-container .about ul li span {
+          display: block;
+          margin-top: 30px;
+          color: #656565; }
+        .center .center-container .about ul li b {
+          display: block;
+          margin-bottom: 16px;
+          color: #656565; }
+        .center .center-container .about ul li a {
+          position: absolute;
+          right: 0;
+          top: 0;
+          color: #656565;
+          text-decoration: underline; }
+      .center .center-container .about ul .info span {
+        font-size: 18px; }
+      .center .center-container .about ul .info b {
+        margin-top: 20px; }

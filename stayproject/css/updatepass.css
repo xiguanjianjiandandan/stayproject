@@ -1,0 +1,27 @@
+.item {
+  overflow: hidden;
+  margin-bottom: 23px; }
+  .item .left {
+    width: 100px;
+    float: left;
+    margin-right: 25px; }
+    .item .left strong {
+      float: right;
+      color: #464646; }
+  .item .right input {
+    display: block;
+    width: 223px;
+    height: 30px;
+    background: #f3f3f3;
+    line-height: 30px;
+    color: #707070; }
+
+.savebtn {
+  width: 120px;
+  height: 30px;
+  background: #ffdb15;
+  border: 1px solid #ffc540;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  margin: 30px 0px 60px 250px; }

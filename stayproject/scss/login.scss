@@ -1,0 +1,139 @@
+.login{
+  height: 793px;
+  position: relative;
+  .login-box{
+    width: 635px;
+    height: 541px;
+    background: #f5f5f5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    h3 {
+      font-size: 24px;
+      color: #363636;
+      margin-top: 55px;
+    }
+    ul{
+      overflow: hidden;
+      margin-left: 176px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      li{
+        float: left;
+        margin-right: 15px;
+        a{
+          display: block;
+          width: 60px;
+          height: 65px;
+
+        }
+      }
+      .douban{
+        a{
+          background: url("../images/common/login_way_icon.png") no-repeat left top;
+          &:hover{
+            background: url("../images/common/login_way_icon.png") no-repeat -75px top;
+          }
+        }
+      }
+      .weibo{
+        a{
+          background: url("../images/common/login_way_icon.png") no-repeat left -75px;
+          &:hover{
+            background: url("../images/common/login_way_icon.png") no-repeat -75px  -75px;
+          }
+        }
+      }
+      .qq{
+        a{
+          background: url("../images/common/login_way_icon.png") no-repeat left -155px;
+          &:hover{
+            background: url("../images/common/login_way_icon.png") no-repeat -75px  -155px;
+          }
+        }
+      }
+      .weixin{
+        a{
+          background: url("../images/common/login_way_icon.png") no-repeat left -238px;
+          &:hover{
+            background: url("../images/common/login_way_icon.png") no-repeat -75px -238px;
+          }
+        }
+      }
+
+    }
+    b{
+      color: #707070;
+      display: block;
+      margin-bottom: 20px;
+    }
+    i{
+      display: block;
+      width: 300px;
+      height: 28px;
+      background: url("../images/register/huo.png") no-repeat left top;
+      margin: 0 auto 20px;
+    }
+    @mixin inputbox{
+      width:271px;
+      height: 34px;
+      border: 1px solid #dcdcdc;
+      margin: 0 auto;
+      border-radius: 10px;
+      strong{
+        display: inline-block;
+        width:20px;
+        height: 16px;
+
+        vertical-align: middle;
+      }
+
+      input {
+        width: 231px;
+        height: 34px;
+      }
+    }
+    .username{
+      @include inputbox;
+      strong{
+        background: url("../images/common/log_icon.png") no-repeat left top;
+      }
+
+    }
+    .password{
+      @include inputbox;
+      margin-bottom: 8px;
+      margin-top: 8px;
+      strong{
+        background: url("../images/common/log_icon.png") no-repeat left -17px;
+      }
+    }
+    button{
+      width:271px;
+      height: 34px;
+      border: 1px solid #dba658;
+      margin: 0 auto;
+      border-radius: 10px;
+      background: #fcb616;
+    }
+
+    .remember{
+      width:271px;
+      margin:0 auto;
+      margin-top: 14px;
+      input{
+        float: left;
+      }
+      span{
+        float: left;
+      }
+      a{
+        float: right;
+      }
+    }
+  }
+}

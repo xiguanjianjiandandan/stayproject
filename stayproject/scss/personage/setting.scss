@@ -1,0 +1,69 @@
+.setting{
+  height: 972px;
+  width: 100%;
+  background: #ededef;
+  .setting-container{
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto;
+
+    .left{
+      width: 732px;
+      height: 810px;
+      background: #fff;
+      margin-top: 58px;
+      .title{
+        height: 54px;
+        border-bottom: 1px solid #eeeeef;
+        i{
+          display: block;
+          width: 22px;
+          height: 22px;
+          float: left;
+          background: url("../images/personsetting/icoPng.png") no-repeat left -203px;
+          margin-top: 25px;
+          margin-left: 26px;
+          margin-right: 16px;
+        }
+        h2{
+          font-size: 18px;
+          color: #2f2f2f;
+          float: left;
+          margin-top: 25px;
+        }
+      }
+      .tabs{
+          padding: 30px 0 30px 0;
+        margin-left: 38px;
+        overflow: hidden;
+          li{
+            float: left;
+            margin: 0 25px;
+            a{
+              color: #464646;
+              font-size: 14px;
+              &:hover{
+                color: #50c8d7;
+                border-bottom: 2px solid #50c8d7;
+              }
+            }
+          }
+      }
+      .content{
+        width: 732px;
+        iframe{
+          width: 732px;
+          height: 660px;
+          border: 0;
+        }
+      }
+    }
+    .right{
+      width: 249px;
+      height: 810px;
+      background: #fff;
+      margin-top: 58px;
+    }
+  }
+
+}

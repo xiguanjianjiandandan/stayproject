@@ -1,0 +1,46 @@
+p{
+  color: #464646;
+  font-size: 16px;
+  margin-bottom: 38px;
+  margin-left: 62px;
+}
+
+dl{
+  margin-left: 62px;
+  overflow: hidden;
+  margin-bottom: 28px;
+  dt{
+    float: left;
+    margin-right: 15px;
+    i{
+      display: block;
+      width: 61px;
+      height: 66px;
+
+    }
+    .douban{
+      background: url("../images/common/login_way_icon.png") no-repeat left top;
+    }
+    .sina{
+      background: url("../images/common/login_way_icon.png") no-repeat left -75px;
+    }
+    .qq{
+      background: url("../images/common/login_way_icon.png") no-repeat left -155px;
+    }
+    .weixin{
+      background: url("../images/common/login_way_icon.png") no-repeat left -238px;
+    }
+  }
+  dd{
+    margin-top: 10px;
+    float: left;
+    span{
+      color: #464646;
+      font-size: 14px;
+    }
+    a{
+      color: #50c8d7;
+      font-size: 14px;
+    }
+  }
+}
