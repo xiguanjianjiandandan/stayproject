@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/myexp.css">
+    <script src="../../js/source/jquery-3.1.0.js"></script>
+    <script src="../../js/me/common.js"></script>
+    <script src="../../js/source/startMove.js"></script>
 </head>
 <body>
 <!--header部分-->
@@ -13,18 +16,31 @@
     <div class="header-container comWidth">
         <a href="#" class="logo fleft"></a>
         <ul class="fleft">
-            <li><a href="#">首页</a></li>
-            <li><a href="experience.html">体验</a></li>
-            <li><a href="#">社区</a></li>
-            <li><a href="#">状态</a></li>
-            <li><a href="#">待法</a></li>
+            <li><a href="" id="indexpage">首页</a></li>
+            <li><a href="" id="exppage">体验</a></li>
+            <li><a href="#" id="compage">社区</a></li>
+            <li><a href="#" id="statuspage">状态</a></li>
+            <li><a href="#" id="waypage">待法</a></li>
             <li><a href="#">待着客户端</a></li>
         </ul>
         <div class="header-right fright">
             <button></button>
-            <a href="login.html">登录</a>
-            <i></i>
-            <a href="register.html">注册</a>
+            <div class="loginregbox">
+                <a href="login.html">登录</a>
+                <i></i>
+                <a href="register.html">注册</a>
+            </div>
+            <div id="loginedbox">
+                <a class="username" id="currentUser" href="#" class="a">沉默抒怀者</a>
+                <i class="trangle"></i>
+                <div id="infolist">
+                    <a href="" id="mycenter">个人主页</a>
+                    <a href="" id="mymsg">消息中心</a>
+                    <a href="" id="myexp">我的体验</a>
+                    <a href="" id="setting">个人设置</a>
+                    <a href="" id="exit">退出</a>
+                </div>
+            </div>
             <a href="#" class="create-btn">发起体验</a>
         </div>
     </div>

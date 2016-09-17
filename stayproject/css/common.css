@@ -23,25 +23,28 @@
     border-bottom: 1px solid #fff;
     background: url("../images/common/returnTop.png") no-repeat left top; }
     .backtop .top:hover {
-      background: url("../images/common/returnTop.png") no-repeat left top; }
+      background: url("../images/common/returnTop.png") no-repeat left -66px; }
   .backtop .com {
     display: block;
     width: 60px;
     height: 60px;
     border-bottom: 1px solid #fff;
-    background: url("../images/common/returnTop.png") no-repeat left top; }
+    background: url("../images/common/returnTop.png") no-repeat -67px top; }
+    .backtop .com:hover {
+      background: url("../images/common/returnTop.png") no-repeat -67px -66px; }
   .backtop .exp {
     display: block;
     width: 60px;
     height: 60px;
-    background: url("../images/common/returnTop.png") no-repeat left top; }
+    background: url("../images/common/returnTop.png") no-repeat -133px top; }
+    .backtop .exp:hover {
+      background: url("../images/common/returnTop.png") no-repeat -133px -66px; }
 
 /*--------------------------header顶部部分------------------------------*/
 .header {
   height: 50px;
   width: 100%;
-  background: #111;
-  overflow: hidden; }
+  background: #111; }
   .header .logo {
     display: block;
     width: 135px;
@@ -64,24 +67,67 @@
       width: 18px;
       height: 18px;
       background: url("../images/index/search.png") no-repeat left -17px;
-      margin-right: 20px;
-      vertical-align: middle; }
-    .header .header-right i {
+      padding-right: 20px;
+      vertical-align: middle;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: #393A3C;
+      margin-right: 20px; }
+    .header .header-right .loginregbox {
+      display: none; }
+      .header .header-right .loginregbox i {
+        display: inline-block;
+        width: 1px;
+        height: 26px;
+        background: #fff;
+        vertical-align: middle; }
+      .header .header-right .loginregbox a {
+        font-size: 12px;
+        color: #fff;
+        padding: 0 14px; }
+        .header .header-right .loginregbox a:hover {
+          color: #84c6ca; }
+    .header .header-right #loginedbox {
       display: inline-block;
-      width: 1px;
-      height: 26px;
-      background: #fff;
-      vertical-align: middle; }
-    .header .header-right a {
-      font-size: 12px;
-      color: #fff;
-      padding: 0 14px; }
-      .header .header-right a:hover {
-        color: #84c6ca; }
+      width: 125px;
+      position: relative; }
+      .header .header-right #loginedbox .username {
+        text-decoration: none;
+        color: #FFFFFF;
+        line-height: 50px; }
+      .header .header-right #loginedbox .trangle {
+        display: inline-block;
+        width: 8px;
+        height: 4px;
+        background: url("../images/index/name_rico.png") no-repeat left top;
+        float: right;
+        margin-right: 20px;
+        margin-top: 21px; }
+      .header .header-right #loginedbox #infolist {
+        width: 125px;
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        padding-bottom: 0px;
+        float: left;
+        height: 0px;
+        overflow: hidden;
+        background: url("../images/index/navMorebg2.png") no-repeat left top;
+        z-index: 30;
+        text-align: center; }
+        .header .header-right #loginedbox #infolist a {
+          text-decoration: none;
+          color: #FFFFFF;
+          line-height: 25px;
+          display: block;
+          line-height: 28px; }
+          .header .header-right #loginedbox #infolist a:hover {
+            background-color: #0C7DBA; }
     .header .header-right .create-btn {
       padding: 5px 26px;
       background: #01c0ce;
-      border-radius: 40px; }
+      border-radius: 40px;
+      color: #fff; }
       .header .header-right .create-btn:hover {
         color: #fff;
         background: #50c8d7; }

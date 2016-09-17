@@ -1,9 +1,12 @@
+.header .header-container .loginregbox {
+  display: inline-block; }
+
 .register {
   height: 793px;
   position: relative; }
   .register .register-box {
     width: 635px;
-    height: 541px;
+    height: 741px;
     background: #f5f5f5;
     position: absolute;
     left: 0;
@@ -27,7 +30,8 @@
       border: 1px solid #dcdcdc;
       border-radius: 10px;
       color: #a9a9a9;
-      padding: 0 15px; }
+      padding: 0 15px;
+      margin: 5px; }
     .register .register-box .btn {
       width: 286px;
       height: 34px;

@@ -1,3 +1,6 @@
+.header .header-container .loginregbox {
+  display: inline-block; }
+
 .login {
   height: 793px;
   position: relative; }
@@ -66,8 +69,10 @@
         height: 16px;
         vertical-align: middle; }
       .login .login-box .username input {
-        width: 231px;
-        height: 34px; }
+        width: 221px;
+        height: 34px;
+        padding-left: 10px;
+        color: gray; }
       .login .login-box .username strong {
         background: url("../images/common/log_icon.png") no-repeat left top; }
     .login .login-box .password {
@@ -84,8 +89,10 @@
         height: 16px;
         vertical-align: middle; }
       .login .login-box .password input {
-        width: 231px;
-        height: 34px; }
+        width: 221px;
+        height: 34px;
+        padding-left: 10px;
+        color: gray; }
       .login .login-box .password strong {
         background: url("../images/common/log_icon.png") no-repeat left -17px; }
     .login .login-box button {

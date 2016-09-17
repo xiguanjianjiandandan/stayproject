@@ -29,7 +29,7 @@ $fontColor:#84c6ca;
       border-bottom: 1px solid #fff;
       background: url("../images/common/returnTop.png") no-repeat left top;
       &:hover{
-        background: url("../images/common/returnTop.png") no-repeat left top;
+        background: url("../images/common/returnTop.png") no-repeat left -66px;
       }
   }
   .com{
@@ -37,13 +37,19 @@ $fontColor:#84c6ca;
     width: 60px;
     height: 60px;
     border-bottom: 1px solid #fff;
-    background: url("../images/common/returnTop.png") no-repeat left top;
+    background: url("../images/common/returnTop.png") no-repeat -67px top;
+    &:hover{
+      background: url("../images/common/returnTop.png") no-repeat -67px -66px;
+    }
   }
   .exp{
     display: block;
     width: 60px;
     height: 60px;
-    background: url("../images/common/returnTop.png") no-repeat left top;
+    background: url("../images/common/returnTop.png") no-repeat -133px top;
+    &:hover{
+      background: url("../images/common/returnTop.png") no-repeat -133px -66px;
+    }
   }
 }
 /*--------------------------header¶¥²¿²¿·Ö------------------------------*/
@@ -53,7 +59,6 @@ $headerHeight:50px;
   height: $headerHeight;
   width: 100%;
   background: #111;
-  overflow: hidden;
   .logo{
     display: block;
     width: 135px;
@@ -82,30 +87,82 @@ $headerHeight:50px;
       width: 18px;
       height: 18px;
       background:url("../images/index/search.png") no-repeat left -17px;
-      margin: {
-        right: 20px;
-      };
+      padding-right: 20px;
       vertical-align: middle;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: #393A3C;
+      margin-right: 20px;
     }
-    i{
-      display: inline-block;
-      width: 1px;
-      height: 26px;
-      background: #fff;
-      vertical-align: middle;
-    }
-    a{
-      font-size: 12px;
-      color: #fff;
-      padding: 0 14px;
-      &:hover{
-        color: $fontColor;
+    .loginregbox{
+      //display: inline-block;
+      display: none;
+      i{
+        display: inline-block;
+        width: 1px;
+        height: 26px;
+        background: #fff;
+        vertical-align: middle;
+      }
+      a{
+        font-size: 12px;
+        color: #fff;
+        padding: 0 14px;
+        &:hover{
+          color: $fontColor;
+        }
       }
     }
+    #loginedbox{
+      display: inline-block;
+      width: 125px;
+      position: relative;
+      .username{
+        text-decoration: none;
+        color: #FFFFFF;
+        line-height: 50px;
+
+      }
+      .trangle{
+        display: inline-block;
+        width: 8px;
+        height: 4px;
+        background: url("../images/index/name_rico.png") no-repeat left top;
+        float: right;
+        margin-right: 20px;
+        margin-top: 21px;
+      }
+      #infolist{
+        width: 125px;
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        padding-bottom: 0px;
+        float: left;
+        height:0px ;
+        overflow: hidden;
+        background:url("../images/index/navMorebg2.png") no-repeat left top;
+        z-index: 30;
+        text-align: center;
+        a{
+          text-decoration: none;
+          color: #FFFFFF;
+          line-height: 25px;
+          display: block;
+          line-height: 28px;
+          &:hover{
+            background-color: #0C7DBA;
+          }
+        }
+
+      }
+    }
+
     .create-btn{
       padding:5px 26px;
       background: #01c0ce;
       border-radius: 40px;
+      color: #fff;
       &:hover{
         color: #fff;
         background: #50c8d7;

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="css/slide.css">
     <script src="js/source/jquery-1.8.3.min.js"></script>
     <script src="js/source/slide.js"></script>
-    <script src="js/me/index.js"></script>
-    <script src="js/source/jquery-1.11.3.min.js"></script>
     <script src="js/source/jquery.toTop.js"></script>
     <script src="js/source/jquery.toTop.min.js"></script>
+    <script src="js/me/index.js"></script>
+    <script src="js/source/startMove.js"></script>
 </head>
 <body>
     <!--回到顶部-->
@@ -38,7 +38,7 @@
             <a href="#" class="logo fleft"></a>
             <ul class="fleft">
                 <li><a href="#">首页</a></li>
-                <li><a href="experience.html">体验</a></li>
+                <li><a id="exppage" href="#">体验</a></li>
                 <li><a href="#">社区</a></li>
                 <li><a href="#">状态</a></li>
                 <li><a href="#">待法</a></li>
@@ -46,9 +46,22 @@
             </ul>
             <div class="header-right fright">
                 <button></button>
-                <a href="login.html">登录</a>
-                <i></i>
-                <a href="register.html">注册</a>
+                <div class="loginregbox" id="loginregbox">
+                        <a href="login.html">登录</a>
+                        <i></i>
+                        <a href="register.html">注册</a>
+                </div>
+                <div id="loginedbox">
+                    <a class="username" id="currentUser" href="#" class="a">沉默抒怀者</a>
+                    <i class="trangle"></i>
+                    <div id="infolist">
+                        <a href="" id="mycenter">个人主页</a>
+                        <a href="" id="mymsg">消息中心</a>
+                        <a href="" id="myexp">我的体验</a>
+                        <a href="" id="setting">个人设置</a>
+                        <a href="" id="exit">退出</a>
+                    </div>
+                </div>
                 <a href="#" class="create-btn">发起体验</a>
             </div>
         </div>

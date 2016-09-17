@@ -13,6 +13,7 @@
     width: 1000px;
     margin: 0 auto;
     margin-top: 95px;
+    overflow: hidden;
     ul {
       margin-right: -100px;
       overflow: hidden;
@@ -130,12 +131,58 @@
         height: 300px;
         margin: 0 20px 20px 0;
         float: left;
+        position: relative;
         dt {
           height: 204px;
+          position: relative;
+
+          &:hover{
+            .querydetailbtn{
+              background: rgba(#000,0.6);
+              display: block;
+            }
+          }
           img {
+
             width: 320px;
             height: 204px;
             overflow: hidden;
+          }
+          i{
+            width: 55px;
+            height: 55px;
+            position: absolute;
+            left:0;
+            top: 0;
+            background: url("../images/experience/list_jiaob.png") no-repeat;
+            background-position-x: 0;
+            background-position-y: 0;
+            z-index: 3;
+
+          }
+          .querydetailbtn{
+            display: none;
+            position: absolute;
+            left:0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            em{
+              position: absolute;
+              left:0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              display: block;
+              width: 130px;
+              height: 36px;
+              font-size: 13px;
+              text-align: center;
+              line-height: 36px;
+              border: 2px solid #50c8d7;
+              color: #50c8d7;
+              margin: auto;
+            }
           }
         }
         dd {
@@ -165,7 +212,7 @@
               float: right;
               font-size: 12px;
               color: #b5b5b5;
-              b{
+              b {
                 font-size: 12px;
               }
             }

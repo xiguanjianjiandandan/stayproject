@@ -1,8 +1,8 @@
-/**
- * Created by Administrator on 2016/9/8.
- */
+/*进入主页前，要首先检查cookie中是否有当前用户登录信息，有的话，直接进入主页面，没有的话，跳转到登录界面*/
+
 //从登陆页面跳转的当前页面，同时接受url中传递过来的参数username.
 var mUrl = document.URL;
+console.log(mUrl);
 var  paramAll =mUrl.split('?')[1];
 var paramValue= mUrl.split("=")[1];
 
@@ -24,21 +24,22 @@ for(var i=0;i<arrCookie.length;i++){
         }
     }
 }
-//登录进入主页面后的操作
-$(document).ready(function(){
 
+
+
+$(function(){
     if(paramValue!=undefined){
         curUser=paramValue;
         $("#currentUser").text(curUser);
     }else{
         if(curUser==undefined){
-            $("#loginregbox").css("display","inline-block");
-            $("#loginedbox").css("display","none");
+            window.location.href="/httpview/stayproject/login.html";
         }else{
             $("#currentUser").text(curUser);
         }
 
     }
+    console.log(curUser);
 
     $("#loginedbox").on("mouseover",function(){
         var oDiv=$("#infolist")[0];
@@ -54,11 +55,15 @@ $(document).ready(function(){
         };
         startMove(oDiv,target);
     });
+    //进入主页
+    $("#indexpage").on("click",function(event){
+        event.preventDefault();
+        window.location.href="/httpview/stayproject/index.html?username="+curUser;
+    });
     //进入体验页
     $("#exppage").on("click",function(event){
         event.preventDefault();
-        console.log(curUser);
-        //window.location.href="/httpview/stayproject/experience.html?username="+curUser;
+        window.location.href="/httpview/stayproject/experience.html?username="+curUser;
     });
     //进入个人主页
     $("#mycenter").on("click",function(event){
@@ -80,17 +85,10 @@ $(document).ready(function(){
         event.preventDefault();
         window.location.href="/httpview/stayproject/html/personage/setting.html?username="+curUser;
     });
-    //退出当前登录
     $("#exit").on("click",function(event){
         //点击退出按钮，要做两个处理，清除cookie，跳转到登录界面
         event.preventDefault();
         document.cookie="userInfo="+""+";repires="+new Date();
-        $("#loginregbox").css("display","inline-block");
-        $("#loginedbox").css("display","none");
+        window.location.href="/httpview/stayproject/login.html";
     });
-
-    $('.ck-slide').ckSlide();
-    $(".backtop").toTop();
 });
-
-

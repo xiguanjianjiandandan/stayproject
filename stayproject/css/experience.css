@@ -12,7 +12,8 @@
   .banner .list {
     width: 1000px;
     margin: 0 auto;
-    margin-top: 95px; }
+    margin-top: 95px;
+    overflow: hidden; }
     .banner .list ul {
       margin-right: -100px;
       overflow: hidden; }
@@ -102,13 +103,50 @@
         width: 320px;
         height: 300px;
         margin: 0 20px 20px 0;
-        float: left; }
+        float: left;
+        position: relative; }
         .content .content-container .list dl dt {
-          height: 204px; }
+          height: 204px;
+          position: relative; }
+          .content .content-container .list dl dt:hover .querydetailbtn {
+            background: rgba(0, 0, 0, 0.6);
+            display: block; }
           .content .content-container .list dl dt img {
             width: 320px;
             height: 204px;
             overflow: hidden; }
+          .content .content-container .list dl dt i {
+            width: 55px;
+            height: 55px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url("../images/experience/list_jiaob.png") no-repeat;
+            background-position-x: 0;
+            background-position-y: 0;
+            z-index: 3; }
+          .content .content-container .list dl dt .querydetailbtn {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0; }
+            .content .content-container .list dl dt .querydetailbtn em {
+              position: absolute;
+              left: 0;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              display: block;
+              width: 130px;
+              height: 36px;
+              font-size: 13px;
+              text-align: center;
+              line-height: 36px;
+              border: 2px solid #50c8d7;
+              color: #50c8d7;
+              margin: auto; }
         .content .content-container .list dl dd {
           height: 96px;
           background: #fff;

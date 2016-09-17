@@ -1,7 +1,16 @@
-.login{
+.header{
+  .header-container{
+    .loginregbox{
+      display: inline-block;
+    }
+  }
+}
+
+
+.login {
   height: 793px;
   position: relative;
-  .login-box{
+  .login-box {
     width: 635px;
     height: 541px;
     background: #f5f5f5;
@@ -17,103 +26,105 @@
       color: #363636;
       margin-top: 55px;
     }
-    ul{
+    ul {
       overflow: hidden;
       margin-left: 176px;
       margin-top: 20px;
       margin-bottom: 20px;
-      li{
+      li {
         float: left;
         margin-right: 15px;
-        a{
+        a {
           display: block;
           width: 60px;
           height: 65px;
 
         }
       }
-      .douban{
-        a{
+      .douban {
+        a {
           background: url("../images/common/login_way_icon.png") no-repeat left top;
-          &:hover{
+          &:hover {
             background: url("../images/common/login_way_icon.png") no-repeat -75px top;
           }
         }
       }
-      .weibo{
-        a{
+      .weibo {
+        a {
           background: url("../images/common/login_way_icon.png") no-repeat left -75px;
-          &:hover{
+          &:hover {
             background: url("../images/common/login_way_icon.png") no-repeat -75px  -75px;
           }
         }
       }
-      .qq{
-        a{
+      .qq {
+        a {
           background: url("../images/common/login_way_icon.png") no-repeat left -155px;
-          &:hover{
+          &:hover {
             background: url("../images/common/login_way_icon.png") no-repeat -75px  -155px;
           }
         }
       }
-      .weixin{
-        a{
+      .weixin {
+        a {
           background: url("../images/common/login_way_icon.png") no-repeat left -238px;
-          &:hover{
+          &:hover {
             background: url("../images/common/login_way_icon.png") no-repeat -75px -238px;
           }
         }
       }
 
     }
-    b{
+    b {
       color: #707070;
       display: block;
       margin-bottom: 20px;
     }
-    i{
+    i {
       display: block;
       width: 300px;
       height: 28px;
       background: url("../images/register/huo.png") no-repeat left top;
       margin: 0 auto 20px;
     }
-    @mixin inputbox{
-      width:271px;
+    @mixin inputbox {
+      width: 271px;
       height: 34px;
       border: 1px solid #dcdcdc;
       margin: 0 auto;
       border-radius: 10px;
-      strong{
+      strong {
         display: inline-block;
-        width:20px;
+        width: 20px;
         height: 16px;
 
         vertical-align: middle;
       }
 
       input {
-        width: 231px;
+        width: 221px;
         height: 34px;
+        padding-left: 10px;
+        color: gray;
       }
     }
-    .username{
+    .username {
       @include inputbox;
-      strong{
+      strong {
         background: url("../images/common/log_icon.png") no-repeat left top;
       }
 
     }
-    .password{
+    .password {
       @include inputbox;
       margin-bottom: 8px;
       margin-top: 8px;
-      strong{
+      strong {
         background: url("../images/common/log_icon.png") no-repeat left -17px;
       }
     }
-    button{
-      width:271px;
+    button {
+      width: 271px;
       height: 34px;
       border: 1px solid #dba658;
       margin: 0 auto;
@@ -121,17 +132,17 @@
       background: #fcb616;
     }
 
-    .remember{
-      width:271px;
-      margin:0 auto;
+    .remember {
+      width: 271px;
+      margin: 0 auto;
       margin-top: 14px;
-      input{
+      input {
         float: left;
       }
-      span{
+      span {
         float: left;
       }
-      a{
+      a {
         float: right;
       }
     }

@@ -1,9 +1,16 @@
+.header{
+  .header-container{
+    .loginregbox{
+      display: inline-block;
+    }
+  }
+}
 .register{
   height: 793px;
   position: relative;
   .register-box {
     width: 635px;
-    height: 541px;
+    height: 741px;
     background: #f5f5f5;
     position: absolute;
     left: 0;
@@ -24,12 +31,20 @@
       margin-bottom: 30px;
     }
     .txt{
-        width: 271px;
-        height: 34px;
+      width: 271px;
+      height: 34px;
       border: 1px solid #dcdcdc;
       border-radius: 10px;
       color: #a9a9a9;
       padding:0 15px;
+      margin: 5px;
+    }
+    strong{
+      //display: inline-block;
+      //width: 18px;
+      //height: 18px;
+      //display: none;
+      //background: url("../images/register/log_ico.png") no-repeat left -87px;
     }
     .btn{
       width: 286px;
